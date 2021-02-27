@@ -20,7 +20,7 @@ class Card {
     constructor(id) {
       this.id = id;
       this.no = Math.floor((Math.random() * 10) + 1);
-      this.value = "?";
+      this.value = "";
       this.colour = "#BEBEBE";
       this.element = document.createElement("div");
       this.lower = document.createElement("button");
