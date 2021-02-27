@@ -1,7 +1,7 @@
 const cardwrapper = document.querySelector('.card-wrapper');
 const cards = new Array(7);
 const startbtn = document.querySelector('#start');
-var before = null;
+let before;
 class StartCard {
   constructor(id) {
     this.id = id;
