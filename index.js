@@ -8,30 +8,12 @@ class StartCard {
     this.value = Math.floor((Math.random() * 10) + 1);
     before = this.value;
     this.colour = "#BEBEBE";
-    
     this.element = document.createElement("div");
-    
     this.element.classList.add('card');
     this.element.style.backgroundColor = this.colour;
     this.element.innerText = this.value;
     this.element.id = id;
-
-
     cardwrapper.appendChild(this.element);
-    
-  }
-  lowerClick(){
-    this.value =this.no;
-    document.getElementById(this.id).innerText = cards[this.id].no;
-  }
-  upperClick(){
-    this.value =this.no;
-    document.getElementById(this.id).innerText = cards[this.id].no;
-  }
-  handleclick() {
-    
-      this.value =this.no;
-      document.getElementById(this.id).innerText = cards[this.id].no;
   }
 }
 class Card {
