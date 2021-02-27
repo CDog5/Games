@@ -22,18 +22,15 @@ class Card {
       this.no = Math.floor((Math.random() * 10) + 1);
       this.value = "?";
       this.colour = "#BEBEBE";
-      
       this.element = document.createElement("div");
       this.lower = document.createElement("button");
       this.lower.innerText = "LOWER"
-      
       this.element.classList.add('card');
       this.element.style.backgroundColor = this.colour;
       this.element.innerText = this.value;
       this.element.id = id;
       this.element.appendChild(this.lower);
       this.higher = document.createElement("button");
-      
       this.higher.innerText = "HIGHER"
       this.element.appendChild(this.higher);
       this.higher.id = id;
@@ -41,7 +38,6 @@ class Card {
       this.lower.onclick = this.lowerClick;
       this.higher.onclick = this.upperClick;
       cardwrapper.appendChild(this.element);
-      
     }
     lowerClick(){
       const thiscard = document.getElementById(this.id)
@@ -75,8 +71,6 @@ function start() {
     else{
       cards[i] = new Card(i);
     }
-    
   }
 }
-
 startbtn.onclick = start;
