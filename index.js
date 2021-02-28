@@ -60,7 +60,7 @@ class Card {
         thiscard.style.backgroundColor = "#E40010";
       }
     }
-
+    before = parseInt(thiscard.innerText);
   }
 function start() {
   cardwrapper.innerHTML = "";
