@@ -7,7 +7,7 @@ let before;
 function isCorrect(id,guess){
   const thiscard = document.getElementById(id);
   thiscard.innerText = cards[id].no;
-  if((thiscard.innerText > before && guess == "upper") || (thiscard.innerText  < before && guess == "lower")){
+  if((thiscard.innerText >= before && guess == "upper") || (thiscard.innerText  <= before && guess == "lower")){
     thiscard.style.backgroundColor = "#1FD537";
     score+=1;
     scrtxt.innerText = score;
